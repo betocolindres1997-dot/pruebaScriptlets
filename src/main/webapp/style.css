@@ -1,0 +1,242 @@
+/* CSS - Tema Gris y Negro */
+
+/* Variables de colores */
+:root {
+    --color-negro: #1a1a1a;
+    --color-gris-oscuro: #2d2d2d;
+    --color-gris-medio: #4a4a4a;
+    --color-gris-claro: #7a7a7a;
+    --color-gris-muy-claro: #c0c0c0;
+    --color-blanco: #ffffff;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-negro);
+    color: var(--color-gris-muy-claro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-blanco);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 3px solid var(--color-gris-claro);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--color-gris-muy-claro);
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--color-gris-oscuro);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-gris-claro);
+}
+
+/* Formulario de usuario */
+.Form_usuario {
+    background-color: var(--color-negro);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border: 1px solid var(--color-gris-medio);
+}
+
+.Form_usuario h1 {
+    color: var(--color-blanco);
+    margin-bottom: 1.5rem;
+}
+
+/* Inputs y campos de formulario */
+input, textarea, select {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-blanco);
+    border: 1px solid var(--color-gris-claro);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--color-gris-muy-claro);
+    background-color: var(--color-gris-medio);
+    box-shadow: 0 0 5px rgba(192, 192, 192, 0.3);
+}
+
+input::placeholder {
+    color: var(--color-gris-claro);
+}
+
+/* Etiquetas */
+label {
+    color: var(--color-gris-muy-claro);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* Botones */
+button, .btn {
+    background-color: var(--color-gris-claro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--color-gris-muy-claro);
+    color: var(--color-negro);
+}
+
+button:active, .btn:active {
+    transform: scale(0.98);
+}
+
+/* Botón primario */
+.btn-primary, .btn.btn-primary {
+    background-color: var(--color-gris-claro);
+}
+
+.btn-primary:hover, .btn.btn-primary:hover {
+    background-color: var(--color-gris-muy-claro);
+}
+
+/* Divisor */
+hr, .divisor {
+    border: none;
+    border-top: 2px dashed var(--color-gris-medio);
+    margin: 2rem 0;
+}
+
+/* Links */
+a {
+    color: var(--color-gris-muy-claro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 1rem;
+    color: var(--color-gris-muy-claro);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table thead {
+    background-color: var(--color-gris-oscuro);
+}
+
+table th {
+    color: var(--color-blanco);
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 2px solid var(--color-gris-claro);
+}
+
+table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-gris-medio);
+    color: var(--color-gris-muy-claro);
+}
+
+table tbody tr:hover {
+    background-color: var(--color-gris-oscuro);
+}
+
+/* Alerts y mensajes */
+.alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    border-left: 4px solid var(--color-gris-claro);
+}
+
+.alert-info {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-muy-claro);
+    border-left-color: var(--color-gris-claro);
+}
+
+.alert-warning {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-muy-claro);
+    border-left-color: var(--color-gris-claro);
+}
+
+.alert-error {
+    background-color: var(--color-gris-oscuro);
+    color: var(--color-gris-muy-claro);
+    border-left-color: var(--color-gris-claro);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .Form_usuario {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    button, .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
