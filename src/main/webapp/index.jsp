@@ -12,7 +12,7 @@
 <br/>
 <div class="container">
     <h1>Bienvenido </h1>
-    <div class="Form_usuario">
+    <div class="Form_usuario" action="Post">
         <h1>Ingrese su usuario y Contraseña</h1>
             <form class="row g-3">
                 <div class="col-auto">
